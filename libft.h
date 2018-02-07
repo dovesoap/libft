@@ -6,7 +6,7 @@
 /*   By: kdovidio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/23 18:49:17 by kdovidio          #+#    #+#             */
-/*   Updated: 2018/02/07 18:29:33 by kdovidio         ###   ########.fr       */
+/*   Updated: 2018/02/07 20:47:32 by kdovidio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,15 @@ typedef	struct		s_list
 unsigned int		ft_abs(int c);
 int					ft_isspace(char c);
 int					ft_min(int a, int b);
+int					ft_isblank(int c);
+int					ft_islower(int c);
+int					ft_isupper(int c);
+int					ft_iscntrl(int c);
+int					ft_isgraph(int c);
+int					ft_isxdigit(int c);
+char				*ft_strupcase(char *s);
+char				*ft_strlowcase(char *s);
+char				*ft_strcapitalize(char *s);
 
 /*
 ** Libc functions

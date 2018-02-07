@@ -6,7 +6,7 @@
 #    By: kdovidio <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/23 18:51:28 by kdovidio          #+#    #+#              #
-#    Updated: 2018/02/07 19:30:24 by kdovidio         ###   ########.fr        #
+#    Updated: 2018/02/07 20:47:11 by kdovidio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,9 +18,19 @@ LIB = -I libft.h
 
 FLAGS = -Wall -Wextra -Werror
 
-FILE = 	ft_abs.c\
+FILE = 	ft_isblank.c\
+		ft_abs.c\
+		ft_isupper.c\
+		ft_islower.c\
 		ft_min.c\
 		ft_isspace.c\
+		ft_iscntrl.c\
+		ft_isgraph.c\
+		ft_isxdigit.c\
+		ft_strupcase.c\
+		ft_strlowcase.c\
+		ft_strcapitalize.c\
+		\
 		ft_memset.c\
 	   	ft_bzero.c\
 	   	ft_memcpy.c\
