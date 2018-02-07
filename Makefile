@@ -6,7 +6,7 @@
 #    By: kdovidio <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/23 18:51:28 by kdovidio          #+#    #+#              #
-#    Updated: 2018/02/07 18:18:12 by kdovidio         ###   ########.fr        #
+#    Updated: 2018/02/07 19:30:24 by kdovidio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,7 @@ FILE = 	ft_abs.c\
 		ft_lstdel.c\
 		ft_lstadd.c\
 		ft_lstiter.c\
-		ft_lstmap
+		ft_lstmap.c
 
 OBJ = $(FILE:.c=.o)
 
