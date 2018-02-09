@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kdovidio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 19:40:12 by kdovidio          #+#    #+#             */
-/*   Updated: 2018/02/09 12:51:47 by kdovidio         ###   ########.fr       */
+/*   Created: 2018/02/09 12:59:09 by kdovidio          #+#    #+#             */
+/*   Updated: 2018/02/09 13:02:32 by kdovidio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int		ft_str_is_alpha(char *str)
 {
-	int		i;
-
-	i = 0;
-	while (s[i])
+	while (*str)
 	{
-		if (s[i] == c)
-			return ((char*)&s[i]);
-		i++;
+		if (ft_isalpha(*str) == 0)
+			return (0);
+		str++;
 	}
-	if (c == '\0' && s[i] == c)
-		return ((char*)&s[i]);
-	return (NULL);
+	return (1);
 }

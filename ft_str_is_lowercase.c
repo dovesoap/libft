@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kdovidio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 19:40:12 by kdovidio          #+#    #+#             */
-/*   Updated: 2018/02/09 12:51:47 by kdovidio         ###   ########.fr       */
+/*   Created: 2018/02/09 13:04:06 by kdovidio          #+#    #+#             */
+/*   Updated: 2018/02/09 13:04:58 by kdovidio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int		ft_str_is_lowercase(char *str)
 {
-	int		i;
-
-	i = 0;
-	while (s[i])
+	while (*str)
 	{
-		if (s[i] == c)
-			return ((char*)&s[i]);
-		i++;
+		if (ft_islower(*str) == 0)
+			return (0);
+		str++;
 	}
-	if (c == '\0' && s[i] == c)
-		return ((char*)&s[i]);
-	return (NULL);
+	return (1);
 }

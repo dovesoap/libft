@@ -6,7 +6,7 @@
 /*   By: kdovidio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/23 18:49:17 by kdovidio          #+#    #+#             */
-/*   Updated: 2018/02/07 20:47:32 by kdovidio         ###   ########.fr       */
+/*   Updated: 2018/02/09 13:08:26 by kdovidio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,11 @@ int					ft_isupper(int c);
 int					ft_iscntrl(int c);
 int					ft_isgraph(int c);
 int					ft_isxdigit(int c);
+int					ft_str_is_alpha(char *str);
+int					ft_str_is_lowercase(char *str);
+int					ft_str_is_numeric(char *str);
+int					ft_str_is_printable(char *str);
+int					ft_str_is_uppercase(char *str);
 char				*ft_strupcase(char *s);
 char				*ft_strlowcase(char *s);
 char				*ft_strcapitalize(char *s);

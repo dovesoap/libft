@@ -6,7 +6,7 @@
 #    By: kdovidio <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/23 18:51:28 by kdovidio          #+#    #+#              #
-#    Updated: 2018/02/07 20:47:11 by kdovidio         ###   ########.fr        #
+#    Updated: 2018/02/09 13:09:05 by kdovidio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,11 @@ FILE = 	ft_isblank.c\
 		ft_iscntrl.c\
 		ft_isgraph.c\
 		ft_isxdigit.c\
+		ft_str_is_alpha.c\
+		ft_str_is_lowercase.c\
+		ft_str_is_numeric.c\
+		ft_str_is_printable.c\
+		ft_str_is_uppercase.c\
 		ft_strupcase.c\
 		ft_strlowcase.c\
 		ft_strcapitalize.c\
